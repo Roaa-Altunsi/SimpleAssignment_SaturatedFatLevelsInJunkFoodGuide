@@ -1,0 +1,203 @@
+
+##################################################################
+#             Saturated Fat Levels in Junk Food Guide            #
+##################################################################
+
+- Number of category types: 3
+
+- Command: add_fastfoodcategories
+	+ Fast-Food	+ Processed-Meat	+ Condiments
+
+- Command: add_groups
+	-> Category: Fast-Food
+	+ Pizza	+ Burger	+ Broast
+
+- Command: add_groups
+	-> Category: Processed-Meat
+	+ Sausage	+ SmokedMeat
+
+- Command: add_groups
+	-> Category: Condiments
+	+ Mayonnaise	+ BBQSauce
+
+- Command: add_product
+	-> Category: Fast-Food
+	-> Group: Pizza
+	-> Number of products: 2
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	1               PizzaHut                Supreme                 6.00
+	2               Maestro                 Rocca                   5.20
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Fast-Food
+	-> Group: Burger
+	-> Number of products: 2
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	3               McDonalds               BigMac                  6.80
+	4               BurgerKing              Grilled                 6.70
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Fast-Food
+	-> Group: Broast
+	-> Number of products: 2
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	5               Albaik                  ChickenMeal             5.00
+	6               KFC                     FriedChicken            6.30
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Processed-Meat
+	-> Group: Sausage
+	-> Number of products: 2
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	7               Amricana                ChickenFranks           11.10
+	8               Doux                    TurkeyFranks            4.93
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Processed-Meat
+	-> Group: SmokedMeat
+	-> Number of products: 1
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	9               HalwaniBros             SmokedOak               10.20
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Condiments
+	-> Group: Mayonnaise
+	-> Number of products: 1
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	10              Original                Goody                   12.00
+    ----------------------------------------------------------------------------------------
+
+- Command: add_product
+	-> Category: Condiments
+	-> Group: BBQSauce
+	-> Number of products: 1
+    ----------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g) 
+	11              Freshly                 HotNSpicy               0.60
+    ----------------------------------------------------------------------------------------
+
+- Command: print_result
+	-> Category: Fast-Food
+	-> Group: Pizza
+	-> Number of products: 2
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	1               PizzaHut                Supreme                 6.00            High 
+	2               Maestro                 Rocca                   5.20            High 
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 5.60
+	* The high category is PizzaHut 1 (Supreme)
+	* The low category is Maestro 2 (Rocca)
+
+- Command: print_result
+	-> Category: Fast-Food
+	-> Group: Burger
+	-> Number of products: 2
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	3               McDonalds               BigMac                  6.80            High 
+	4               BurgerKing              Grilled                 6.70            High 
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 6.75
+	* The high category is McDonalds 3 (BigMac)
+	* The low category is BurgerKing 4 (Grilled)
+
+- Command: print_result
+	-> Category: Fast-Food
+	-> Group: Broast
+	-> Number of products: 2
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	5               Albaik                  ChickenMeal             5.00            Normal
+	6               KFC                     FriedChicken            6.30            High 
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 5.65
+	* The high category is KFC 6 (FriedChicken)
+	* The low category is Albaik 5 (ChickenMeal)
+
+- Command: print_result
+	-> Category: Processed-Meat
+	-> Group: SmokedMeat
+	-> Number of products: 1
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	9               HalwaniBros             SmokedOak               10.20           High 
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 10.20
+	* The high category is HalwaniBros 9 (SmokedOak)
+	* The low category is HalwaniBros 9 (SmokedOak)
+
+- Command: print_result
+	-> Category: Processed-Meat
+	-> Group: Sausage
+	-> Number of products: 2
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	7               Amricana                ChickenFranks           11.10           High 
+	8               Doux                    TurkeyFranks            4.93            Low  
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 8.02
+	* The high category is Amricana 7 (ChickenFranks)
+	* The low category is Doux 8 (TurkeyFranks)
+
+- Command: print_result
+	-> Category: Condiments
+	-> Group: Mayonnaise
+	-> Number of products: 1
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	10              Original                Goody                   12.00           High 
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 12.00
+	* The high category is Original 10 (Goody)
+	* The low category is Original 10 (Goody)
+
+- Command: print_result
+	-> Category: Condiments
+	-> Group: BBQSauce
+	-> Number of products: 1
+    -------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF Level	Status
+    -------------------------------------------------------------------------------------------------------
+	11              Freshly                 HotNSpicy               0.60            Low  
+	-------------------------------------------------------------------------------------------------------
+	* The average SFLevel is 0.60
+	* The high category is Freshly 11 (HotNSpicy)
+	* The low category is Freshly 11 (HotNSpicy)
+
+- Command: find_average_sflevel
+	* The average SFLevel for all categories in all category types is 6.80
+
+- Command:  find_high_sflevel
+	* The high category sflevel in all category types is:
+	-------------------------------------------------------------------------------------------------------
+	Sr #      	Brand     		Product   		SF (per 100g)	Status
+	-------------------------------------------------------------------------------------------------------
+	10              Original                Goody                   12.00           High 
+	-------------------------------------------------------------------------------------------------------
+	In Category: Condiments, Group: Mayonnaise
+
+- Command: about_guide
+	-> Developed By: Roaa Hatim Altunsi
+	-> University ID: 1914946
+	-> Section: IAR
+
+Thank You! :)
+Report generated on Thu Oct 07 16:27:41 AST 2021

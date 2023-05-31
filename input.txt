@@ -1,0 +1,36 @@
+3
+3 2 2 
+add_fastfoodcategories Fast-Food Processed-Meat Condiments
+add_groups Fast-Food Pizza Burger Broast 
+add_groups Processed-Meat Sausage SmokedMeat
+add_groups Condiments Mayonnaise BBQSauce
+add_products Fast-Food Pizza 2
+Supreme_PizzaHut_1 6
+Rocca_Maestro_2 5.2
+add_products Fast-Food Burger 2
+BigMac_McDonalds_3 6.8
+Grilled_BurgerKing_4 6.7
+add_products Fast-Food Broast 2
+ChickenMeal_Albaik_5 5
+FriedChicken_KFC_6 6.3
+add_products Processed-Meat Sausage 2
+ChickenFranks_Amricana_7 11.1
+TurkeyFranks_Doux_8 4.93
+add_products Processed-Meat SmokedMeat 1
+SmokedOak_HalwaniBros_9 10.2
+add_products Condiments Mayonnaise 1
+Goody_Original_10 12
+add_products Condiments BBQSauce 1
+HotNSpicy_Freshly_11 0.6
+print_result Fast-Food Pizza
+print_result Fast-Food Burger
+print_result Fast-Food Broast
+print_result Processed-Meat SmokedMeat
+print_result Processed-Meat Sausage
+print_result Condiments Mayonnaise
+print_result Condiments BBQSauce
+find_average_sflevel
+find_highest_sflevel
+find_lowest_sflevel
+about_guide
+exit
